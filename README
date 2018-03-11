@@ -1,0 +1,18 @@
+ SOCKET
+--------
+Socket is a communication mechanism that allow client/server to communicate with each other.
+AF_UNIX	 to create socket for local communication.
+AF_INET	 for IPV4 socket
+AF_INET6 for IPV6 socket
+AF_RAW 	 for raw socket(direct network layer).
+
+There are various system call for this they are:-
+socket()  	Create a socket for end-point communication.
+bind()		To give the name to socket. so that other can identify it.
+listen()	listen for connection on a socket.
+accept()	To accept the connection from the client.
+connect()	To connect to the server socket.
+close()		To close the socket.
+
+send() and receive() data on the socket. also read() and write() to communicate between server and client.
+
