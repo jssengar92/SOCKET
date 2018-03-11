@@ -1,0 +1,9 @@
+  getaddrinfo
+--------------
+
+getaddrinfo() combines the functionality of gethostbyname() and getservicebyname() into a single function.
+the addressinfo structure returned by getaddrinfo contains the internet IP that can be specified to call
+bind() and connect().
+This function is re-entrant.
+Eliminate the IPv4 and IPv6 dependencies.
+
