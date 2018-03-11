@@ -1,0 +1,22 @@
+ SOCKET
+--------
+Socket is a communication mechanism that allow client/server to communicate with each other.
+AF_UNIX to create socket for local communication.
+
+There are various system call for this they are:-
+socket()  	Create a socket for end-point communication.
+bind()		To give the name to socket. so that other can identify it.
+listen()	listen for connection on a socket.
+accept()	To accept the connection from the client.
+connect()	To connect to the server socket.
+close()		To close the socket.
+
+send() and receive() data on the socket. also read() and write() to communicate between server and client.
+
+To compile the code:
+gcc -o srvr srvr.c
+gcc -o req_client req_client.c
+
+Run:
+./srvr 			in one terminal
+./req_client		another terminal
